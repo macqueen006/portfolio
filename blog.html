@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>portfolio</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<header
+      class="fixed inset-x-0 top-0 h-20 py-4 bg-white/70 backdrop-blur-[10px] z-5"
+    >
+      <div
+        class="z-5 flex overflow-hidden w-full h-full px-4 justify-between items-center md:px-8"
+      >
+        <div class="nav-brand pl-0">
+          <a href="./">
+            <img
+              src="/src/assets/img/icons/about-logo.svg"
+              width="24"
+              height="100"
+              alt="brand logo"
+            />
+          </a>
+        </div>
+        <nav
+          id="main-nav"
+          class="main-nav absolute top-0 inset-x-0 overflow-hidden w-full h-160 sm:h-202.5 bg-transparent-white -translate-y-full pointer-events-none transition-transform duration-500 ease-in-out-quad"
+        >
+          <div
+            class="relative flex flex-col w-full h-full pt-28 px-4 md:pt-40 md:px-8 md:pb-12 pb-8 gap-y-30 backdrop-blur-sm"
+          >
+            <div class="flex flex-col justify-start gap-y-1 md:gap-y-2.5">
+              <div class="relative pb-2.5 group/item">
+                <a href="./" class="nav-link">
+                  <span class="text-p-mono">( _01 )</span>
+                  Home
+                </a>
+                <div
+                  class="h-0.5 w-0 group-hover/item:w-full absolute top-auto bg-black transition-all duration-300 ease-in-out-quad"
+                ></div>
+              </div>
+              <div class="relative pb-2.5 group/item">
+                <a href="projects" class="nav-link">
+                  <span class="text-p-mono">( _02 )</span>
+                  Projects
+                </a>
+                <div
+                  class="h-0.5 w-0 group-hover/item:w-full absolute top-auto bg-black transition-all duration-300 ease-in-out-quad"
+                ></div>
+              </div>
+              <div class="relative pb-2.5 group/item">
+                <a href="about" class="nav-link">
+                  <span class="text-p-mono">( _03 )</span>
+                  About
+                </a>
+                <div
+                  class="h-0.5 w-0 group-hover/item:w-full absolute top-auto bg-black transition-all duration-300 ease-in-out-quad"
+                ></div>
+              </div>
+              <div class="relative pb-2.5 group/item">
+                <a href="blog" class="nav-link">
+                  <span class="text-p-mono">( _04 )</span>
+                  Blog
+                </a>
+                <div
+                  class="h-0.5 w-0 group-hover/item:w-full absolute top-auto bg-black transition-all duration-300 ease-in-out-quad"
+                ></div>
+              </div>
+              <div class="relative pb-2.5 group/item">
+                <a href="contact" class="nav-link">
+                  <span class="text-p-mono">( _05 )</span>
+                  Contact
+                </a>
+                <div
+                  class="h-0.5 w-0 group-hover/item:w-full absolute top-auto bg-black transition-all duration-300 ease-in-out-quad"
+                ></div>
+              </div>
+            </div>
+            <div class="relative">
+              <a href="#" class="text-3xl relative group inline-block">
+                <div class="pt-2 pb-4">hi@Godwin.io</div>
+                <div
+                  class="absolute w-[15%] bottom-0 left-0 h-0.5 bg-black group-hover:w-full duration-350 transition-all ease-in"
+                ></div>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div
+          id="hamburger-menu"
+          class="z-5 size-8 flex p-0 justify-center group items-center bg-transparent relative cursor-pointer"
+        >
+          <div
+            class="w-0.5 h-8 rounded-2xl bg-black group-hover:-translate-y-1 group-hover:rotate-90 duration-350 ease-in-out"
+          ></div>
+          <div
+            class="w-0.5 h-8 rounded-2xl bg-black absolute rotate-90 group-hover:translate-y-1 duration-350 ease-in-out"
+          ></div>
+        </div>
+      </div>
+    </header>
+
+<main>
+    <section class="pt-8 pb-4 lg:pt-32">
+        <div class="px-4 md:px-6 mx-auto w-full max-w-380">
+            <div class="flex flex-col w-full justify-start items-stretch gap-y-4 md:gap-y-6 lg:gap-y-14">
+                <div data-animate-up class="flex flex-col gap-y-5 justify-center items-center text-center">
+                    <div class="w-full max-w-87.5 space-y-5">
+                        <h1 class="font-medium">Creative Dispatch.</h1>
+                        <div class="text-center block text-text">
+                            <div class="text-p-xl">Every color, word, and pixel comes from a clear strategy
+                                built to help you grow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- project collections -->
+                <div class="bg-transparent">
+                    <div class="grid grid-cols-1 gap-x-6 gap-y-3 md:grid-cols-2">
+                        <div class="overflow-hidden w-full border border-border rounded-[20px] text-black">
+                            <div class="overflow-hidden w-full h-80 rounded-t-[20px] sm:h-100 md:h-180 lg:h-125 group/card">
+                                <img class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                                     src="/src/assets/img/glass-heart.png"
+                                     width="2000"
+                                     height="1500"
+                                     loading="lazy"
+                                     decoding="async"
+                                     alt="plus icon"
+                                >
+                            </div>
+                            <div class="flex flex-col px-4 py-5 gap-y-2">
+                                <p class="text-p-mono">
+                                    April, 7, 2026
+                                </p>
+                                <div class="max-w-87.5">
+                                    <h6 class="font-medium">Inside the Studio: Our Process for Crafting a Standout
+                                        Identity</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden w-full border border-border rounded-[20px] text-black">
+                            <div class="overflow-hidden w-full h-80 rounded-t-[20px] sm:h-100 md:h-180 lg:h-125 group/card">
+                                <img class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                                     src="/src/assets/img/glass-heart.png"
+                                     width="2000"
+                                     height="1500"
+                                     loading="lazy"
+                                     decoding="async"
+                                     alt="plus icon"
+                                >
+                            </div>
+                            <div class="flex flex-col px-4 py-5 gap-y-2">
+                                <p class="text-p-mono">
+                                    April, 7, 2026
+                                </p>
+                                <div class="max-w-87.5">
+                                    <h6 class="font-medium">Inside the Studio: Our Process for Crafting a Standout
+                                        Identity</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Empty states -->
+                    <div class="p-2.5 bg-[#ddd] hidden">
+                        <p>No items found.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-10 md:pb-12">
+        <!-- container -->
+        <div class="w-full max-w-380 mx-auto px-4 md:px-6 lg:px-8">
+            <div class="flex flex-col justify-start items-stretch gap-y-8 tab:gap-y-12">
+                <!-- top -->
+                <div class="relative">
+                    <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+                        <div>
+                            <!-- blog card -->
+                            <div class="overflow-hidden w-full border border-border rounded-[20px] text-black">
+                                <div class="overflow-hidden w-full h-80 rounded-[20px] sm:h-100 md:h-180 lg:h-125 group/card">
+                                    <img class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                                         src="/src/assets/img/glass-heart.png"
+                                         width="2000"
+                                         height="1500"
+                                         loading="lazy"
+                                         decoding="async"
+                                         alt="plus icon"
+                                    >
+                                </div>
+                                <div class="flex flex-col px-4 py-5 gap-y-2">
+                                    <p class="text-p-mono">
+                                        April, 7, 2026
+                                    </p>
+                                    <div class="max-w-87.5">
+                                        <h6 class="font-medium">Inside the Studio: Our Process for Crafting a Standout
+                                            Identity</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end blog card -->
+                        </div>
+                        <div>
+                            <!-- blog card -->
+                            <div class="overflow-hidden w-full border border-border rounded-[20px] text-black">
+                                <div class="overflow-hidden w-full h-80 rounded-[20px] sm:h-100 md:h-180 lg:h-125 group/card">
+                                    <img class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                                         src="/src/assets/img/african-man.png"
+                                         width="2000"
+                                         height="1501"
+                                         loading="lazy"
+                                         decoding="async"
+                                         alt="plus icon"
+                                    >
+                                </div>
+                                <div class="flex flex-col px-4 py-5 gap-y-2">
+                                    <p class="text-p-mono">
+                                        April, 7, 2026
+                                    </p>
+                                    <div class="max-w-87.5">
+                                        <h6 class="font-medium">From Sketch to Screen: How Ideas Evolve Into Impactful
+                                            Designs</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end blog card -->
+                        </div>
+                        <div>
+                            <!-- blog card -->
+                            <div class="overflow-hidden w-full border border-border rounded-[20px] text-black">
+                                <div class="overflow-hidden w-full h-80 rounded-[20px] sm:h-100 md:h-180 lg:h-125 group/card">
+                                    <img class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                                         src="/src/assets/img/desert-surfing.png"
+                                         width="2000"
+                                         height="1500"
+                                         loading="lazy"
+                                         decoding="async"
+                                         alt="plus icon"
+                                    >
+                                </div>
+                                <div class="flex flex-col px-4 py-5 gap-y-2">
+                                    <p class="text-p-mono">
+                                        April, 7, 2026
+                                    </p>
+                                    <div class="max-w-87.5">
+                                        <h6 class="font-medium">Why Every Brand Needs a Signature Visual Language</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end blog card -->
+                        </div>
+                        <div>
+                            <!-- blog card -->
+                            <div class="overflow-hidden w-full border border-border rounded-[20px] text-black">
+                                <div class="overflow-hidden w-full h-80 rounded-[20px] sm:h-100 md:h-180 lg:h-125 group/card">
+                                    <img class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                                         src="/src/assets/img/glass-heart.png"
+                                         width="2000"
+                                         height="1500"
+                                         loading="lazy"
+                                         decoding="async"
+                                         alt="plus icon"
+                                    >
+                                </div>
+                                <div class="flex flex-col px-4 py-5 gap-y-2">
+                                    <p class="text-p-mono">
+                                        April, 7, 2026
+                                    </p>
+                                    <div class="max-w-87.5">
+                                        <h6 class="font-medium">Inside the Studio: Our Process for Crafting a Standout
+                                            Identity</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end blog card -->
+                        </div>
+                        <div>
+                            <!-- blog card -->
+                            <div class="overflow-hidden w-full border border-border rounded-[20px] text-black">
+                                <div class="overflow-hidden w-full h-80 rounded-[20px] sm:h-100 md:h-180 lg:h-125 group/card">
+                                    <img class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                                         src="/src/assets/img/african-man.png"
+                                         width="2000"
+                                         height="1501"
+                                         loading="lazy"
+                                         decoding="async"
+                                         alt="plus icon"
+                                    >
+                                </div>
+                                <div class="flex flex-col px-4 py-5 gap-y-2">
+                                    <p class="text-p-mono">
+                                        April, 7, 2026
+                                    </p>
+                                    <div class="max-w-87.5">
+                                        <h6 class="font-medium">From Sketch to Screen: How Ideas Evolve Into Impactful
+                                            Designs</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end blog card -->
+                        </div>
+                        <div>
+                            <!-- blog card -->
+                            <div class="overflow-hidden w-full border border-border rounded-[20px] text-black">
+                                <div class="overflow-hidden w-full h-80 rounded-[20px] sm:h-100 md:h-180 lg:h-125 group/card">
+                                    <img class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                                         src="/src/assets/img/desert-surfing.png"
+                                         width="2000"
+                                         height="1500"
+                                         loading="lazy"
+                                         decoding="async"
+                                         alt="plus icon"
+                                    >
+                                </div>
+                                <div class="flex flex-col px-4 py-5 gap-y-2">
+                                    <p class="text-p-mono">
+                                        April, 7, 2026
+                                    </p>
+                                    <div class="max-w-87.5">
+                                        <h6 class="font-medium">Why Every Brand Needs a Signature Visual Language</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end blog card -->
+                        </div>
+                        <div>
+                            <!-- blog card -->
+                            <div class="overflow-hidden w-full border border-border rounded-[20px] text-black">
+                                <div class="overflow-hidden w-full h-80 rounded-[20px] sm:h-100 md:h-180 lg:h-125 group/card">
+                                    <img class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                                         src="/src/assets/img/glass-heart.png"
+                                         width="2000"
+                                         height="1500"
+                                         loading="lazy"
+                                         decoding="async"
+                                         alt="plus icon"
+                                    >
+                                </div>
+                                <div class="flex flex-col px-4 py-5 gap-y-2">
+                                    <p class="text-p-mono">
+                                        April, 7, 2026
+                                    </p>
+                                    <div class="max-w-87.5">
+                                        <h6 class="font-medium">Inside the Studio: Our Process for Crafting a Standout
+                                            Identity</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end blog card -->
+                        </div>
+                        <div>
+                            <!-- blog card -->
+                            <div class="overflow-hidden w-full border border-border rounded-[20px] text-black">
+                                <div class="overflow-hidden w-full h-80 rounded-[20px] sm:h-100 md:h-180 lg:h-125 group/card">
+                                    <img class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                                         src="/src/assets/img/african-man.png"
+                                         width="2000"
+                                         height="1501"
+                                         loading="lazy"
+                                         decoding="async"
+                                         alt="plus icon"
+                                    >
+                                </div>
+                                <div class="flex flex-col px-4 py-5 gap-y-2">
+                                    <p class="text-p-mono">
+                                        April, 7, 2026
+                                    </p>
+                                    <div class="max-w-87.5">
+                                        <h6 class="font-medium">From Sketch to Screen: How Ideas Evolve Into Impactful
+                                            Designs</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end blog card -->
+                        </div>
+                        <div>
+                            <!-- blog card -->
+                            <div class="overflow-hidden w-full border border-border rounded-[20px] text-black">
+                                <div class="overflow-hidden w-full h-80 rounded-[20px] sm:h-100 md:h-180 lg:h-125 group/card">
+                                    <img class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                                         src="/src/assets/img/desert-surfing.png"
+                                         width="2000"
+                                         height="1500"
+                                         loading="lazy"
+                                         decoding="async"
+                                         alt="plus icon"
+                                    >
+                                </div>
+                                <div class="flex flex-col px-4 py-5 gap-y-2">
+                                    <p class="text-p-mono">
+                                        April, 7, 2026
+                                    </p>
+                                    <div class="max-w-87.5">
+                                        <h6 class="font-medium">Why Every Brand Needs a Signature Visual Language</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end blog card -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end top -->
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="px-4 py-6 md:p-6 lg:p-8 bg-light-gray">
+    <div class="flex flex-col justify-start items-stretch gap-y-33.5 md:gap-y-62.5">
+        <div class="flex flex-col justify-start items-stretch gap-y-24">
+            <!-- top -->
+            <div class="flex justify-between items-center">
+                <div data-animate-down class="nav-brand z-3 w-15">
+                    <img src="/src/assets/img/icons/about-logo.svg" width="32" height="100" alt="brand logo">
+                </div>
+                <div class="flex justify-center items-center gap-x-3">
+                    <a href="#">BE</a>
+                    <span>/</span>
+                    <a href="#">DR</a>
+                    <span>/</span>
+                    <a href="#">X</a>
+                </div>
+            </div>
+            <!-- end top -->
+            <!-- content -->
+            <div class="flex flex-col gap-y-18 md:flex-row md:justify-between md:items-start md:gap-x-10">
+                <!-- text -->
+                <div class="flex flex-col justify-start items-start w-full max-w-112.5 gap-y-7.5">
+                    <div class="heading-h4">
+                        We’d love to hear from you
+                        <span class="text-text">
+                            whether you have a project in mind, or just want to say hi.
+                        </span>
+                    </div>
+                    <a href="mailto:hi@bunhee.io" class="group/link">
+                        <div class="pt-2 pb-4">
+                            <div class="heading-h4">hi@bungee.io</div>
+                        </div>
+                        <div class="w-[15%] h-0.5 group-hover/link:w-full overflow-hidden bg-black transition-all duration-350 ease-in-out-quad"></div>
+                    </a>
+                </div>
+                <!-- end text -->
+                <!-- newsletter -->
+                <div class="flex flex-col justify-start items-stretch gap-y-5.75 w-full max-w-full md:max-w-112.5">
+                    <div class="w-full max-w-87.5 flex flex-col justify-start items-stretch gap-y-2.5">
+                        <h3>Join our newsletter</h3>
+                        <div class="text-text tracking-2">
+                            Daily dose of design trends by the team.
+                        </div>
+                    </div>
+
+                    <div class="mb-0 flex flex-col justify-start items-stretch gap-y-5.75">
+                        <form aria-label="Newsletter Form" class="flex flex-col justify-start items-stretch gap-y-5.75">
+                            <div>
+                                <label for="news-name"></label>
+                                <input
+                                        class="h-12 w-full border-b border-gray block mb-0 p-0 focus-visible:outline-none focus:border-blue-500"
+                                        maxlength="256"
+                                        name="name"
+                                        placeholder="Name"
+                                        type="text"
+                                        id="news-name">
+                            </div>
+                            <div>
+                                <label for="news-email"></label>
+                                <input
+                                        class="h-12 w-full border-b border-gray block mb-0 p-0 focus-visible:outline-none focus:border-blue-500"
+                                        maxlength="256"
+                                        name="email"
+                                        placeholder="Email"
+                                        type="email"
+                                        id="news-email"
+                                        required=""
+                                >
+                            </div>
+                            <input
+                                    type="submit"
+                                    data-wait="Please wait..."
+                                    class="h-13 px-3.75 rounded-xl font-medium bg-black text-white hover:bg-[#1e1e1ed9] uppercase transition-colors duration-350 ease-in-out"
+                                    value="SEND"
+                            >
+                        </form>
+                        <div class="hidden font-medium leading-[1.5em] text-p-l" tabindex="-1" role="region"
+                             aria-label="Newsletter Form success">
+                            <div>Thank you! Your submission has been received!</div>
+                        </div>
+                        <div class="hidden" tabindex="-1" role="region" aria-label="Newsletter Form failure">
+                            <div>Oops! Something went wrong while submitting the form.</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end newsletter -->
+            </div>
+            <!-- end content -->
+        </div>
+        <div class="flex flex-col items-start gap-4 lg:flex-row lg:justify-between lg:items-center">
+            <div class="flex flex-wrap justify-start items-center gap-y-6 md:flex-nowrap md:gap-y-0 gap-x-8">
+                <a href="projects" class="footer-link">Projects</a>
+                <a href="about" class="footer-link">About</a>
+                <a href="blog" class="footer-link">Blog</a>
+                <a href="contact" class="footer-link">Contact</a>
+                <a href="templates/style-guide" class="footer-link">Style Guide</a>
+                <a href="templates/licenes" class="footer-link">Licenses</a>
+                <a href="templates/changelog" class="footer-link">Changelog</a>
+            </div>
+            <p class="text-p-mono font-medium">Powered by AngleSoft</p>
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="/src/main.js" defer></script>
+</body>
+</html>

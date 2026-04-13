@@ -1,0 +1,2041 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ogbrukomo Godwin</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header
+      class="fixed inset-x-0 top-0 h-20 py-4 bg-white/70 backdrop-blur-[10px] z-5"
+    >
+      <div
+        class="z-5 flex overflow-hidden w-full h-full px-4 justify-between items-center md:px-8"
+      >
+        <div class="nav-brand pl-0">
+          <a href="./">
+            <img
+              src="/src/assets/img/icons/about-logo.svg"
+              width="24"
+              height="100"
+              alt="brand logo"
+            />
+          </a>
+        </div>
+        <nav
+          id="main-nav"
+          class="main-nav absolute top-0 inset-x-0 overflow-hidden w-full h-160 sm:h-202.5 bg-transparent-white -translate-y-full pointer-events-none transition-transform duration-500 ease-in-out-quad"
+        >
+          <div
+            class="relative flex flex-col w-full h-full pt-28 px-4 md:pt-40 md:px-8 md:pb-12 pb-8 gap-y-30 backdrop-blur-sm"
+          >
+            <div class="flex flex-col justify-start gap-y-1 md:gap-y-2.5">
+              <div class="relative pb-2.5 group/item">
+                <a href="./" class="nav-link">
+                  <span class="text-p-mono">( _01 )</span>
+                  Home
+                </a>
+                <div
+                  class="h-0.5 w-0 group-hover/item:w-full absolute top-auto bg-black transition-all duration-300 ease-in-out-quad"
+                ></div>
+              </div>
+              <div class="relative pb-2.5 group/item">
+                <a href="projects" class="nav-link">
+                  <span class="text-p-mono">( _02 )</span>
+                  Projects
+                </a>
+                <div
+                  class="h-0.5 w-0 group-hover/item:w-full absolute top-auto bg-black transition-all duration-300 ease-in-out-quad"
+                ></div>
+              </div>
+              <div class="relative pb-2.5 group/item">
+                <a href="about" class="nav-link">
+                  <span class="text-p-mono">( _03 )</span>
+                  About
+                </a>
+                <div
+                  class="h-0.5 w-0 group-hover/item:w-full absolute top-auto bg-black transition-all duration-300 ease-in-out-quad"
+                ></div>
+              </div>
+              <div class="relative pb-2.5 group/item">
+                <a href="blog" class="nav-link">
+                  <span class="text-p-mono">( _04 )</span>
+                  Blog
+                </a>
+                <div
+                  class="h-0.5 w-0 group-hover/item:w-full absolute top-auto bg-black transition-all duration-300 ease-in-out-quad"
+                ></div>
+              </div>
+              <div class="relative pb-2.5 group/item">
+                <a href="contact" class="nav-link">
+                  <span class="text-p-mono">( _05 )</span>
+                  Contact
+                </a>
+                <div
+                  class="h-0.5 w-0 group-hover/item:w-full absolute top-auto bg-black transition-all duration-300 ease-in-out-quad"
+                ></div>
+              </div>
+            </div>
+            <div class="relative">
+              <a href="#" class="text-3xl relative group inline-block">
+                <div class="pt-2 pb-4">hi@Godwin.io</div>
+                <div
+                  class="absolute w-[15%] bottom-0 left-0 h-0.5 bg-black group-hover:w-full duration-350 transition-all ease-in"
+                ></div>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div
+          id="hamburger-menu"
+          class="z-5 size-8 flex p-0 justify-center group items-center bg-transparent relative cursor-pointer"
+        >
+          <div
+            class="w-0.5 h-8 rounded-2xl bg-black group-hover:-translate-y-1 group-hover:rotate-90 duration-350 ease-in-out"
+          ></div>
+          <div
+            class="w-0.5 h-8 rounded-2xl bg-black absolute rotate-90 group-hover:translate-y-1 duration-350 ease-in-out"
+          ></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section
+        class="w-full lg:h-screen py-4 md:py-6 lg:pt-26.25 lg:pb-8 overflow-hidden"
+      >
+        <!-- Wrapper -->
+        <div
+          class="flex w-full h-full flex-col justify-between pt-16 gap-y-42 md:pt-12 md:gap-y-56 lg:pt-0 lg:gap-y-0"
+        >
+          <!-- Top block -->
+          <div
+            class="pt-12 px-4 md:px-6 lg:px-8 text-center text-p-l flex flex-col items-center justify-start gap-8"
+          >
+            <img
+              data-animate-hero
+              class="w-full max-w-176 block"
+              src="/src/assets/img/icons/bungee-text.svg"
+              width="704"
+              height="189"
+              loading="eager"
+              decoding="async"
+              alt="hero text"
+            />
+            <!-- End Hero image -->
+            <p class="heading-h5" data-animate-up>
+              Creative studio based in Gotham.
+            </p>
+            <!-- End hero text -->
+          </div>
+          <!-- End Top block -->
+          <!-- Bottom Block -->
+          <div
+            class="flex flex-col items-stretch gap-y-12.5 md:gap-y-12 lg:gap-y-8.5"
+          >
+            <!-- Bottom block top -->
+            <div
+              class="px-4 md:px-6 lg:px-8 flex justify-end items-center relative"
+            >
+              <!-- time block -->
+              <div
+                class="flex justify-start items-center gap-x-2.5 -rotate-90 absolute -top-11.25 -left-4"
+              >
+                <span>(</span>
+                <span>HAIL</span>
+                <span>LAGOS</span>
+                <span>)</span>
+              </div>
+              <!-- end time block -->
+              <!-- social links -->
+              <div class="flex justify-center items-center gap-x-3">
+                <a href="#">BE</a>
+                <span>/</span>
+                <a href="#">DR</a>
+                <span>/</span>
+                <a href="#">X</a>
+              </div>
+              <!-- end social links -->
+            </div>
+            <!-- End Bottom Block top -->
+            <!-- Bottom block -->
+            <div class="relative block" data-animate-up>
+              <!-- Hero marquee wrapper outer -->
+              <div
+                class="relative flex items-stretch gap-x-2.5 justify-start h-130 overflow-hidden"
+              >
+                <!-- wrapper -->
+                <div
+                  class="marquee-track flex justify-start items-stretch gap-x-2.5"
+                >
+                  <!-- marquee block -->
+                  <div
+                    class="flex justify-start items-stretch flex-none mx-auto xs:mx-0 gap-x-2.5"
+                  >
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <video
+                          autoplay
+                          muted
+                          loop
+                          playsinline
+                          class="w-full h-full object-cover"
+                        >
+                          <source
+                            src="https://cdn.prod.website-files.com/68f33158cced4a41f89d89a6%2F6903d92be1096c25ee0356a4_hero-marquee-video-01-transcode.webm"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/plant.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <video
+                          autoplay
+                          muted
+                          loop
+                          playsinline
+                          class="w-full h-full object-cover"
+                        >
+                          <source
+                            src="https://cdn.prod.website-files.com/68f33158cced4a41f89d89a6%2F6903da528f19a5a4baf4d58b_hero-marquee-video-03-transcode.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/cartoon-image.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/blur-gradient.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/red-background.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/flower.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/plant.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                  </div>
+                  <!-- end marquee block -->
+                  <!-- marquee block -->
+                  <div
+                    class="flex justify-start items-stretch flex-none mx-auto xs:mx-0 gap-x-2.5"
+                  >
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <video
+                          autoplay
+                          muted
+                          loop
+                          playsinline
+                          class="w-full h-full object-cover"
+                        >
+                          <source
+                            src="https://cdn.prod.website-files.com/68f33158cced4a41f89d89a6%2F6903d92be1096c25ee0356a4_hero-marquee-video-01-transcode.webm"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/plant.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <video
+                          autoplay
+                          muted
+                          loop
+                          playsinline
+                          class="w-full h-full object-cover"
+                        >
+                          <source
+                            src="https://cdn.prod.website-files.com/68f33158cced4a41f89d89a6%2F6903da528f19a5a4baf4d58b_hero-marquee-video-03-transcode.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/cartoon-image.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/blur-gradient.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/red-background.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/flower.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/plant.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                  </div>
+                  <!-- end marquee block -->
+                  <!-- marquee block -->
+                  <div
+                    class="flex justify-start items-stretch flex-none mx-auto xs:mx-0 gap-x-2.5"
+                  >
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <video
+                          autoplay
+                          muted
+                          loop
+                          playsinline
+                          class="w-full h-full object-cover"
+                        >
+                          <source
+                            src="https://cdn.prod.website-files.com/68f33158cced4a41f89d89a6%2F6903d92be1096c25ee0356a4_hero-marquee-video-01-transcode.webm"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/plant.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <video
+                          autoplay
+                          muted
+                          loop
+                          playsinline
+                          class="w-full h-full object-cover"
+                        >
+                          <source
+                            src="https://cdn.prod.website-files.com/68f33158cced4a41f89d89a6%2F6903da528f19a5a4baf4d58b_hero-marquee-video-03-transcode.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/cartoon-image.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/blur-gradient.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/red-background.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/flower.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/plant.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                  </div>
+                  <!-- end marquee block -->
+                  <!-- marquee block -->
+                  <div
+                    class="flex justify-start items-stretch flex-none mx-auto xs:mx-0 gap-x-2.5"
+                  >
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <video
+                          autoplay
+                          muted
+                          loop
+                          playsinline
+                          class="w-full h-full object-cover"
+                        >
+                          <source
+                            src="https://cdn.prod.website-files.com/68f33158cced4a41f89d89a6%2F6903d92be1096c25ee0356a4_hero-marquee-video-01-transcode.webm"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/plant.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <video
+                          autoplay
+                          muted
+                          loop
+                          playsinline
+                          class="w-full h-full object-cover"
+                        >
+                          <source
+                            src="https://cdn.prod.website-files.com/68f33158cced4a41f89d89a6%2F6903da528f19a5a4baf4d58b_hero-marquee-video-03-transcode.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/cartoon-image.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/blur-gradient.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/red-background.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                    <!-- marquee item -->
+                    <div
+                      class="flex justify-start items-stretch flex-none gap-x-2.5"
+                    >
+                      <!-- marquee item single -->
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tl-[80px] rounded-br-[80px]"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/flower.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <div
+                        class="overflow-hidden w-45.25 flex-none rounded-tr-[80px] rounded-bl-[80px] justify-center items-center"
+                      >
+                        <img
+                          class="w-full h-full block object-cover"
+                          src="/src/assets/img/plant.avif"
+                          width="530"
+                          height="530"
+                          alt="marquee image"
+                        />
+                      </div>
+                      <!-- end marquee item single -->
+                    </div>
+                    <!-- end marquee item -->
+                  </div>
+                  <!-- end marquee block -->
+                </div>
+                <!-- end wrapper -->
+                <!-- top mask -->
+                <div class="absolute inset-0 bg-fade-sides"></div>
+                <!-- end top mask -->
+              </div>
+              <!-- End marquee wrapper outer -->
+            </div>
+            <!-- End Bottom block -->
+          </div>
+          <!-- End Bottom Block -->
+        </div>
+        <!-- End Wrapper -->
+      </section>
+      <!--End Hero -->
+      <!-- About -->
+      <section class="px-4 py-8 md:py-24 md:px-6 lg:py-30 lg:px-8">
+        <div class="mx-auto py-5 px-4 flex flex-col max-w-162.5 gap-y-6">
+          <div class="w-full text-center">
+            <h3 class="font-medium gsap_split_line">
+              We're Bungee a creative studio cultivating bold brands, beautiful
+              websites, and ideas that refuse to be ordinary.
+            </h3>
+          </div>
+          <div class="overflow-hidden relative">
+            <div class="absolute inset-0 bg-fade-sides z-2"></div>
+            <div
+              class="logos-marquee-track flex justify-start items-stretch h-20 gap-x-11 lg:gap-x-20"
+            >
+              <div
+                class="flex items-center justify-start flex-none gap-11 md:gap-20"
+              >
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/bliss+-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/blob-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/clonify-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/coral-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/flea-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/polltree-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/winkk-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/yallo-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+              </div>
+              <div
+                class="flex items-center justify-start flex-none gap-11 md:gap-20"
+              >
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/bliss+-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/blob-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/clonify-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/coral-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/flea-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/polltree-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/winkk-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+                <img
+                  class="max-w-full"
+                  src="/src/assets/img/icons/yallo-gray.svg"
+                  width="100"
+                  height="27"
+                  alt="partners logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About -->
+      <!-- Projects -->
+      <section class="py-8 md:pb-20 lg:pb-32">
+        <div class="px-4 md:px-6 mx-auto w-full max-w-380">
+          <div
+            class="flex flex-col w-full justify-start items-stretch gap-y-4 md:gap-y-6 lg:gap-y-14"
+          >
+            <div
+              data-animate-down
+              class="flex flex-col sm:flex-row gap-y-4 sm:gap-y-0 sm:justify-between sm:items-end"
+            >
+              <div class="w-full max-w-87.5">
+                <h2 class="font-medium">Latest Projects.</h2>
+              </div>
+              <p>( _©25 )</p>
+            </div>
+            <!-- project collections -->
+            <div class="bg-transparent" data-animate-down>
+              <div class="grid grid-cols-1 gap-x-6 gap-y-3 md:grid-cols-2">
+                <div class="block">
+                  <div class="inline-block w-full relative group/card">
+                    <div
+                      class="w-full h-87.5 tab:h-100 md:h-187.5 rounded-4xl overflow-clip"
+                    >
+                      <img
+                        class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                        src="/src/assets/img/afro-woman.avif"
+                        width="639"
+                        height="750"
+                        alt="project"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <div
+                        class="flex justify-center items-center absolute inset-0"
+                      ></div>
+                    </div>
+                    <div class="flex justify-between items-center py-3 pl-3">
+                      <p class="uppercase">things</p>
+                      <p>_07.25</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="inline-block w-full relative group/card">
+                    <div
+                      class="w-full h-87.5 tab:h-100 md:h-187.5 rounded-4xl overflow-clip"
+                    >
+                      <img
+                        class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                        src="/src/assets/img/black-guy.avif"
+                        width="639"
+                        height="750"
+                        alt="project"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <div
+                        class="flex justify-center items-center absolute inset-0"
+                      ></div>
+                    </div>
+                    <div class="flex justify-between items-center py-3 pl-3">
+                      <p class="uppercase">things</p>
+                      <p>_07.25</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="inline-block w-full relative group/card">
+                    <div
+                      class="w-full h-87.5 tab:h-100 md:h-187.5 rounded-4xl overflow-clip"
+                    >
+                      <img
+                        class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                        src="/src/assets/img/cartoon-image.avif"
+                        width="639"
+                        height="750"
+                        alt="project"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <div
+                        class="flex justify-center items-center absolute inset-0"
+                      ></div>
+                    </div>
+                    <div class="flex justify-between items-center py-3 pl-3">
+                      <p class="uppercase">things</p>
+                      <p>_07.25</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="inline-block w-full relative group/card">
+                    <div
+                      class="w-full h-87.5 tab:h-100 md:h-187.5 rounded-4xl overflow-clip"
+                    >
+                      <img
+                        class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                        src="/src/assets/img/red-background.avif"
+                        width="639"
+                        height="750"
+                        alt="project"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <div
+                        class="flex justify-center items-center absolute inset-0"
+                      ></div>
+                    </div>
+                    <div class="flex justify-between items-center py-3 pl-3">
+                      <p class="uppercase">things</p>
+                      <p>_07.25</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="inline-block w-full relative group/card">
+                    <div
+                      class="w-full h-87.5 tab:h-100 md:h-187.5 rounded-4xl overflow-clip"
+                    >
+                      <img
+                        class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                        src="/src/assets/img/black-woman.avif"
+                        width="639"
+                        height="750"
+                        alt="project"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <div
+                        class="flex justify-center items-center absolute inset-0"
+                      ></div>
+                    </div>
+                    <div class="flex justify-between items-center py-3 pl-3">
+                      <p class="uppercase">things</p>
+                      <p>_07.25</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="block">
+                  <div class="inline-block w-full relative group/card">
+                    <div
+                      class="w-full h-87.5 tab:h-100 md:h-187.5 rounded-4xl overflow-clip"
+                    >
+                      <img
+                        class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                        src="/src/assets/img/flower.avif"
+                        width="639"
+                        height="750"
+                        alt="project"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <div
+                        class="flex justify-center items-center absolute inset-0"
+                      ></div>
+                    </div>
+                    <div class="flex justify-between items-center py-3 pl-3">
+                      <p class="uppercase">things</p>
+                      <p>_07.25</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Empty states -->
+              <div class="p-2.5 bg-[#ddd] hidden">
+                <p>No items found.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Projects -->
+      <!-- Services -->
+      <section class="py-8 md:pb-20 lg:pb-32">
+        <!-- container -->
+        <div class="w-full max-w-380 mx-auto px-4 md:px-6 lg:px-8">
+          <div
+            class="flex flex-col justify-start items-stretch gap-y-8 tab:gap-y-12"
+          >
+            <!-- top -->
+            <div
+              data-animate-down
+              class="flex flex-col justify-between items-start gap-y-4 tab:flex-row tab:items-end tab:justify-between"
+            >
+              <h2>Services.</h2>
+              <a
+                href="/contact"
+                class="relative w-32 hover:w-51 flex justify-between group/link items-center gap-x-4 pb-1 font-medium text-p-l leading-p-sm tracking-[-0.02em] transition-all duration-300 ease-in-out-quad"
+              >
+                Get in touch.
+                <img
+                  class="size-4 object-cover max-w-full"
+                  src="/src/assets/img/icons/plus.svg"
+                  width="16"
+                  height="16"
+                  loading="lazy"
+                  decoding="async"
+                  alt="plus icon"
+                />
+                <div
+                  class="absolute bottom-0 w-[15%] group-hover/link:w-full h-px bg-black transition-all duration-300 ease-in-out-quad"
+                ></div>
+              </a>
+            </div>
+            <!-- end top -->
+
+            <!-- top -->
+            <div data-animate-up class="relative">
+              <div class="pb-15 block">
+                <!-- Splide root — replaces old .slider-track wrapper -->
+                <div
+                  id="service-slider"
+                  class="splide w-full max-w-full h-125 relative"
+                >
+                  <div class="splide__track h-full overflow-x-clip">
+                    <ul class="splide__list">
+                      <!-- Slide 001 -->
+                      <li
+                        class="splide__slide w-full tab:max-w-112.5 h-full relative"
+                      >
+                        <div
+                          class="w-full h-full p-10 flex flex-col bg-[#e5daf6] items-start justify-between rounded-[40px]"
+                        >
+                          <p>( 001 )</p>
+                          <img
+                            class="w-14 h-14 object-cover max-w-full inline-block self-center"
+                            height="56"
+                            width="56"
+                            src="/src/assets/img/icons/service-2.svg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="service card icon"
+                          />
+                          <div
+                            class="flex flex-col gap-y-2.5 justify-start items-stretch w-full max-w-62.5 whitespace-normal"
+                          >
+                            <p class="uppercase">branding</p>
+                            <p>
+                              We craft logos and brands systems that leave a
+                              lasting impression.
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <!-- Slide 002 -->
+                      <li
+                        class="splide__slide w-full tab:max-w-112.5 h-full relative"
+                      >
+                        <div
+                          class="w-full h-full p-10 flex flex-col bg-[#cfffb2] items-start justify-between rounded-[40px]"
+                        >
+                          <p>( 002 )</p>
+                          <img
+                            class="w-14 h-14 object-cover max-w-full inline-block self-center"
+                            height="56"
+                            width="56"
+                            src="/src/assets/img/icons/service-1.svg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="service card icon"
+                          />
+                          <div
+                            class="flex flex-col gap-y-2.5 justify-start items-stretch w-full max-w-62.5 whitespace-normal"
+                          >
+                            <p class="uppercase">web design</p>
+                            <p>
+                              We craft logos and brands systems that leave a
+                              lasting impression.
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <!-- Slide 003 -->
+                      <li
+                        class="splide__slide w-full tab:max-w-112.5 h-full relative"
+                      >
+                        <div
+                          class="w-full h-full p-10 flex flex-col bg-[#ffc9c9] items-start justify-between rounded-[40px]"
+                        >
+                          <p>( 003 )</p>
+                          <img
+                            class="w-14 h-14 object-cover max-w-full inline-block self-center"
+                            height="56"
+                            width="56"
+                            src="/src/assets/img/icons/service-3.svg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="service card icon"
+                          />
+                          <div
+                            class="flex flex-col gap-y-2.5 justify-start items-stretch w-full max-w-62.5 whitespace-normal"
+                          >
+                            <p class="uppercase">development</p>
+                            <p>
+                              We craft logos and brands systems that leave a
+                              lasting impression.
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+
+                      <!-- Slide 004 -->
+                      <li
+                        class="splide__slide w-full tab:max-w-112.5 h-full relative"
+                      >
+                        <div
+                          class="w-full h-full p-10 flex flex-col bg-[#fedca6] items-start justify-between rounded-[40px]"
+                        >
+                          <p>( 004 )</p>
+                          <img
+                            class="w-14 h-14 object-cover max-w-full inline-block self-center"
+                            height="56"
+                            width="56"
+                            src="/src/assets/img/icons/service.svg"
+                            loading="lazy"
+                            decoding="async"
+                            alt="service card icon"
+                          />
+                          <div
+                            class="flex flex-col gap-y-2.5 justify-start items-stretch w-full max-w-62.5 whitespace-normal"
+                          >
+                            <p class="uppercase">strategy</p>
+                            <p>
+                              We craft logos and brands systems that leave a
+                              lasting impression.
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end splide -->
+
+                <!-- arrow left — unchanged markup, wired via JS -->
+                <button
+                  class="arrow-prev hidden z-3 absolute cursor-pointer mt-51.25 top-0 right-auto bottom-0 left-0 md:flex justify-center items-center rounded-full bg-[rgba(0,0,0,0.18)] size-12.5"
+                >
+                  <img
+                    class="w-12.5 h-12.5 object-cover"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                    decoding="async"
+                    src="/src/assets/img/icons/chevron-left.svg"
+                    alt="arrow left"
+                  />
+                </button>
+
+                <!-- arrow right — unchanged markup, wired via JS -->
+                <button
+                  class="arrow-next hidden z-3 absolute cursor-pointer mt-51.25 md:flex justify-center top-0 right-0 bottom-0 left-auto items-center rounded-full bg-[rgba(0,0,0,0.18)] size-12.5"
+                >
+                  <img
+                    class="w-full h-full object-cover"
+                    width="50"
+                    height="50"
+                    loading="lazy"
+                    decoding="async"
+                    src="/src/assets/img/icons/chevron-right.svg"
+                    alt="arrow right"
+                  />
+                </button>
+
+                <!-- slider fade effect — unchanged -->
+                <div
+                  class="hidden tab:block absolute inset-0 z-2 bg-fade-right pointer-events-none"
+                ></div>
+
+                <!-- slider dots — unchanged markup, synced via JS -->
+                <div
+                  class="slider-dots w-32.5 md:hidden z-3 flex justify-center bg-[rgba(0,0,0,0.2)] items-center rounded-[50px] absolute top-auto left-0 right-0 bottom-0 mx-auto pt-2.5"
+                >
+                  <div
+                    class="dot size-4 bg-white rounded-full mx-1.5 mb-2 cursor-pointer inline-block"
+                    data-index="0"
+                  ></div>
+                  <div
+                    class="dot size-4 bg-[#fff6] rounded-full mx-1.5 mb-2 cursor-pointer inline-block"
+                    data-index="1"
+                  ></div>
+                  <div
+                    class="dot size-4 bg-[#fff6] rounded-full mx-1.5 mb-2 cursor-pointer inline-block"
+                    data-index="2"
+                  ></div>
+                  <div
+                    class="dot size-4 bg-[#fff6] rounded-full mx-1.5 mb-2 cursor-pointer inline-block"
+                    data-index="3"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <!-- end top -->
+          </div>
+        </div>
+      </section>
+      <!-- End Services -->
+      <!-- Matrics -->
+      <section class="pt-12 pb-4 md:pt-8 md:pb-6 lg:pb-30">
+        <div class="w-full max-w-380 mx-auto px-4 md:px-6 lg:px-8">
+          <div
+            class="flex flex-col justify-start items-stretch gap-y-8 md:gap-y-10"
+          >
+            <div data-animate-down class="max-w-200">
+              <h3>
+                Bungee® is a creative studio shaping bold brands and daring
+                ideas.
+              </h3>
+            </div>
+            <div class="flex flex-col justify-start items-stretch gap-y-8">
+              <div
+                data-animate-up
+                class="rounded-[40px] flex justify-center items-center w-full h-123.5 bg-cover bg-center bg-no-repeat bg-[url('/src/assets/img/red-background.avif')]"
+              >
+                <div
+                  class="bg-[#ffffff] hover:bg-transparent-white transition-colors duration-400 rounded-full flex justify-center items-center size-30"
+                >
+                  <img
+                    class="size-8 object-cover"
+                    src="/src/assets/img/icons/play.svg"
+                    width="32"
+                    height="32"
+                    alt="play button"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+              <div
+                data-animate-up
+                class="flex flex-col lg:flex-row items-stretch justify-between divide-y divide-border lg:divide-y-0"
+              >
+                <!-- start -->
+                <div
+                  class="flex flex-col p-4 md:p-6 lg:p-4 gap-y-4 justify-start items-stretch w-full"
+                >
+                  <div
+                    class="flex justify-start items-end gap-x-0.75 text-[40px] leading-[1em] font-medium"
+                  >
+                    3m+
+                  </div>
+                  <div class="text-gray text-p-l w-full max-w-50">
+                    Capital raised by brands we helped out.
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- start -->
+                <div
+                  class="flex flex-col p-4 md:p-6 lg:p-4 gap-y-4 justify-start items-stretch w-full"
+                >
+                  <div
+                    class="flex justify-start items-end gap-x-0.75 text-[40px] leading-[1em] font-medium"
+                  >
+                    289
+                  </div>
+                  <div class="text-gray text-p-l w-full max-w-50">
+                    Brands launched through our creative process.
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- start -->
+                <div
+                  class="flex flex-col p-4 md:p-6 lg:p-4 gap-y-4 justify-start items-stretch w-full"
+                >
+                  <div
+                    class="flex justify-start items-end gap-x-0.75 text-[40px] leading-[1em] font-medium"
+                  >
+                    56
+                  </div>
+                  <div class="text-gray text-p-l w-full max-w-50">
+                    Awards recognizing our branding excellence.
+                  </div>
+                </div>
+                <!-- end -->
+                <!-- start -->
+                <div
+                  class="flex flex-col p-4 md:p-6 lg:p-4 gap-y-4 justify-start items-stretch w-full"
+                >
+                  <div
+                    class="flex justify-start items-end gap-x-0.75 text-[40px] leading-[1em] font-medium"
+                  >
+                    97%
+                  </div>
+                  <div class="text-gray text-p-l w-full max-w-50">
+                    Client satisfaction rate across all delivered work.
+                  </div>
+                </div>
+                <!-- end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Matrics -->
+      <!-- Testimonials -->
+      <section class="pt-8 pb-10 md:pb-20 lg:pb-30">
+        <!-- container -->
+        <div class="w-full max-w-380 mx-auto px-4 md:px-6 lg:px-8">
+          <div
+            class="flex flex-col gap-y-6 md:gap-y-8 justify-start items-stretch"
+          >
+            <div
+              data-animate-down
+              class="w-full max-w-150 text-center flex flex-col gap-y-4 justify-start items-stretch mx-auto py-5 px-4 md:pb-6"
+            >
+              <p class="uppercase">( testimonials )</p>
+              <h3 class="font-medium">
+                Trusted by brands who aren’t afraid to stand out.
+              </h3>
+            </div>
+            <div
+              class="flex flex-col justify-start items-stretch gap-y-6 md:gap-y-8"
+            >
+              <!-- Card -->
+              <div
+                class="relative top-0 pb-6 grid grid-cols-1 gap-0 rounded-4xl bg-light-gray md:sticky md:top-20 md:pb-0 lg:grid-cols-2"
+              >
+                <div
+                  class="h-100 lg:h-175 w-full overflow-clip block rounded-tl-4xl rounded-bl-4xl"
+                >
+                  <img
+                    class="w-full h-full object-cover max-w-full inline-block"
+                    src="/src/assets/img/afro-woman.avif"
+                    width="752"
+                    height="700"
+                    alt="clonify founder"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div
+                  class="flex flex-col justify-center items-stretch px-4 pt-8 pb-10 gap-y-10 max-w-full md:max-w-125 md:pt-12 md:pb-20 md:px-6 lg:max-w-none lg:p-14 lg:gap-y-14"
+                >
+                  <h4>
+                    Working with Bungee felt like hiring a creative greenhouse
+                    for our ideas. Everything grew faster and brighter than we
+                    imagined.
+                  </h4>
+                  <div class="flex flex-col gap-y-2">
+                    <p>Sarah Conor</p>
+                    <p class="text-text">Founder, Clonify</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div
+                class="relative top-0 pb-6 grid grid-cols-1 gap-0 rounded-4xl bg-light-gray md:sticky md:top-20 md:pb-0 lg:grid-cols-2"
+              >
+                <div
+                  class="h-100 lg:h-175 w-full overflow-clip block rounded-tl-4xl rounded-bl-4xl"
+                >
+                  <img
+                    class="w-full h-full object-cover max-w-full inline-block"
+                    src="/src/assets/img/glasses.avif"
+                    width="752"
+                    height="700"
+                    alt="clonify founder"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div
+                  class="flex flex-col justify-center items-stretch px-4 pt-8 pb-10 gap-y-10 max-w-full md:max-w-125 md:pt-12 md:pb-20 md:px-6 lg:max-w-none lg:p-14 lg:gap-y-14"
+                >
+                  <h4>
+                    Working with Bugee was a game-changer. They didn’t just
+                    design our brand they captured its soul. Everything feels
+                    elevated, intentional, and totally us
+                  </h4>
+                  <div class="flex flex-col gap-y-2">
+                    <p>Bruce Lee</p>
+                    <p class="text-text">Design Director, Maiz</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+              <!-- Card -->
+              <div
+                class="relative top-0 pb-6 grid grid-cols-1 gap-0 rounded-4xl bg-light-gray md:sticky md:top-20 md:pb-0 lg:grid-cols-2"
+              >
+                <div
+                  class="h-100 lg:h-175 w-full overflow-clip block rounded-tl-4xl rounded-bl-4xl"
+                >
+                  <img
+                    class="w-full h-full object-cover max-w-full inline-block"
+                    src="/src/assets/img/girl-suit.avif"
+                    width="752"
+                    height="700"
+                    alt="clonify founder"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div
+                  class="flex flex-col justify-center items-stretch px-4 pt-8 pb-10 gap-y-10 max-w-full md:max-w-125 md:pt-12 md:pb-20 md:px-6 lg:max-w-none lg:p-14 lg:gap-y-14"
+                >
+                  <h4>
+                    From concept to launch, the Bungee team delivered with
+                    clarity, creativity, and style. We’ve never looked more
+                    professional or more ourselves.
+                  </h4>
+                  <div class="flex flex-col gap-y-2">
+                    <p>John Headphone</p>
+                    <p class="text-text">UFO, Marcom</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Card -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials -->
+      <!-- FAQ -->
+      <section class="py-8 md:pb-24 md:px-6 lg:px-8">
+        <!-- container -->
+        <div class="w-full max-w-380 mx-auto px-4 md:px-6 lg:px-8">
+          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-2.5">
+            <div data-animate-down>
+              <h2 class="uppercase">faq.</h2>
+            </div>
+            <div
+              data-animate-up
+              class="flex flex-col justify-start items-stretch gap-y-3 w-full max-w-full"
+            >
+              <!-- faq item -->
+              <div
+                class="overflow-hidden w-full z-1 divide-y divide-border group"
+              >
+                <div
+                  class="flex justify-between items-center faq-trigger cursor-pointer gap-x-4 py-3 group-hover:border-black transition-colors duration-400"
+                >
+                  <p>What's included in the monthly package?</p>
+                  <div class="size-5 overflow-clip faq-arrow">
+                    <img
+                      class="w-full h-full max-w-full object-cover"
+                      src="/src/assets/img/icons/faq-chevron.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      decoding="async"
+                      alt="arrow down"
+                    />
+                  </div>
+                </div>
+                <div class="relative overflow-hidden answer-body">
+                  <div class="py-4 text-text">
+                    <p>
+                      Each monthly package includes a set number of design or
+                      development hours, dedicated project management, weekly
+                      updates, and priority support. We tailor it to fit your
+                      needs whether that’s ongoing branding, web updates, or new
+                      creative assets.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end faq item -->
+              <!-- faq item -->
+              <div
+                class="overflow-hidden w-full z-1 divide-y divide-border group"
+              >
+                <div
+                  class="flex justify-between items-center faq-trigger cursor-pointer gap-x-4 py-3 group-hover:border-black transition-colors duration-400"
+                >
+                  <p>How long does a project usually take?</p>
+                  <div class="size-5 overflow-clip faq-arrow">
+                    <img
+                      class="w-full h-full max-w-full object-cover"
+                      src="/src/assets/img/icons/faq-chevron.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      decoding="async"
+                      alt="arrow down"
+                    />
+                  </div>
+                </div>
+                <div class="relative overflow-hidden answer-body">
+                  <div class="py-4 text-text">
+                    <p>
+                      Timelines depend on the scope, but most branding projects
+                      take 2–3 weeks, and full website builds range from 3 to 6
+                      weeks. We’ll always give you a clear timeline upfront and
+                      stick to it.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end faq item -->
+              <!-- faq item -->
+              <div
+                class="overflow-hidden w-full z-1 divide-y divide-border group"
+              >
+                <div
+                  class="flex justify-between items-center faq-trigger cursor-pointer gap-x-4 py-3 group-hover:border-black transition-colors duration-400"
+                >
+                  <p>Do you offer ongoing support after launch?</p>
+                  <div class="size-5 overflow-clip faq-arrow">
+                    <img
+                      class="w-full h-full max-w-full object-cover"
+                      src="/src/assets/img/icons/faq-chevron.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      decoding="async"
+                      alt="arrow down"
+                    />
+                  </div>
+                </div>
+                <div class="relative overflow-hidden answer-body">
+                  <div class="py-4 text-text">
+                    <p>
+                      Absolutely. We offer ongoing maintenance, design tweaks,
+                      updates, and new feature support. Think of us as your
+                      creative partner, not just a one-time service.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end faq item -->
+              <!-- faq item -->
+              <div
+                class="overflow-hidden w-full z-1 divide-y divide-border group"
+              >
+                <div
+                  class="flex justify-between items-center faq-trigger cursor-pointer gap-x-4 py-3 group-hover:border-black transition-colors duration-400"
+                >
+                  <p>Can i hire you for just a logo or one-off design?</p>
+                  <div class="size-5 overflow-clip faq-arrow">
+                    <img
+                      class="w-full h-full max-w-full object-cover"
+                      src="/src/assets/img/icons/faq-chevron.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      decoding="async"
+                      alt="arrow down"
+                    />
+                  </div>
+                </div>
+                <div class="relative overflow-hidden answer-body">
+                  <div class="py-4 text-text">
+                    <p>
+                      Yes we take on one-off projects like logos, pitch decks,
+                      or landing pages. If it’s a good fit, we’re happy to jump
+                      in and help.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end faq item -->
+              <!-- faq item -->
+              <div
+                class="overflow-hidden w-full z-1 divide-y divide-border group"
+              >
+                <div
+                  class="flex justify-between items-center faq-trigger cursor-pointer gap-x-4 py-3 group-hover:border-black transition-colors duration-400"
+                >
+                  <p>What platforms do you build websites on?</p>
+                  <div class="size-5 overflow-clip faq-arrow">
+                    <img
+                      class="w-full h-full max-w-full object-cover"
+                      src="/src/assets/img/icons/faq-chevron.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      decoding="async"
+                      alt="arrow down"
+                    />
+                  </div>
+                </div>
+                <div class="relative overflow-hidden answer-body">
+                  <div class="py-4 text-text">
+                    <p>
+                      We primarily work with Framer, Webflow, and Shopify but
+                      we’re flexible depending on your project needs and tech
+                      stack.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end faq item -->
+              <!-- faq item -->
+              <div
+                class="overflow-hidden w-full z-1 divide-y divide-border group"
+              >
+                <div
+                  class="flex justify-between items-center faq-trigger cursor-pointer gap-x-4 py-3 group-hover:border-black transition-colors duration-400"
+                >
+                  <p>How do payments work?</p>
+                  <div class="size-5 overflow-clip faq-arrow">
+                    <img
+                      class="w-full h-full max-w-full object-cover"
+                      src="/src/assets/img/icons/faq-chevron.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      decoding="async"
+                      alt="arrow down"
+                    />
+                  </div>
+                </div>
+                <div class="relative overflow-hidden answer-body">
+                  <div class="py-4 text-text">
+                    <p>
+                      For fixed-scope projects, we split payments into 50%
+                      upfront and 50% upon completion. For monthly retainers,
+                      payments are made at the start of each billing cycle. We
+                      accept most major payment methods.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end faq item -->
+              <!-- faq item -->
+              <div
+                class="overflow-hidden w-full z-1 divide-y divide-border group"
+              >
+                <div
+                  class="flex justify-between items-center faq-trigger cursor-pointer gap-x-4 py-3 group-hover:border-black transition-colors duration-400"
+                >
+                  <p>What if i'm not happy with the first concept?</p>
+                  <div class="size-5 overflow-clip faq-arrow">
+                    <img
+                      class="w-full h-full max-w-full object-cover"
+                      src="/src/assets/img/icons/faq-chevron.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      decoding="async"
+                      alt="arrow down"
+                    />
+                  </div>
+                </div>
+                <div class="relative overflow-hidden answer-body">
+                  <div class="py-4 text-text">
+                    <p>
+                      No problem that’s part of the process. We include multiple
+                      rounds of revisions to ensure you’re completely happy with
+                      the final result. Your feedback helps us shape it just
+                      right.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end faq item -->
+              <!-- faq item -->
+              <div
+                class="overflow-hidden w-full z-1 divide-y divide-border group"
+              >
+                <div
+                  class="flex justify-between items-center faq-trigger cursor-pointer gap-x-4 py-3 group-hover:border-black transition-colors duration-400"
+                >
+                  <p>Do you work with clients from any country?</p>
+                  <div class="size-5 overflow-clip faq-arrow">
+                    <img
+                      class="w-full h-full max-w-full object-cover"
+                      src="/src/assets/img/icons/faq-chevron.svg"
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      decoding="async"
+                      alt="arrow down"
+                    />
+                  </div>
+                </div>
+                <div class="relative overflow-hidden answer-body">
+                  <div class="py-4 text-text">
+                    <p>
+                      Yes! We work with clients around the world across time
+                      zones, industries, and cultures. Remote collaboration is
+                      our default, and we’ve got it down to a science.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- end faq item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End FAQ -->
+      <!-- Blog -->
+      <section class="py-8 md:pb-12">
+        <!-- container -->
+        <div class="w-full max-w-380 mx-auto px-4 md:px-6 lg:px-8">
+          <div
+            class="flex flex-col justify-start items-stretch gap-y-8 tab:gap-y-12"
+          >
+            <!-- top -->
+            <div
+              data-animate-down
+              class="flex flex-col justify-between items-start gap-y-4 tab:flex-row tab:items-end tab:justify-between"
+            >
+              <h2 class="heading-h1 max-w-75">Creative dispatch.</h2>
+              <a
+                href="/contact"
+                class="relative w-27 hover:w-51 flex justify-between group/link items-center gap-x-4 pb-1 font-medium text-p-l leading-p-sm tracking-[-0.02em] transition-all duration-300 ease-in-out-quad"
+              >
+                Let's Talk.
+                <img
+                  class="size-4 object-cover max-w-full"
+                  src="/src/assets/img/icons/plus.svg"
+                  width="16"
+                  height="16"
+                  loading="lazy"
+                  decoding="async"
+                  alt="plus icon"
+                />
+                <div
+                  class="absolute bottom-0 w-[15%] group-hover/link:w-full h-px bg-black transition-all duration-300 ease-in-out-quad"
+                ></div>
+              </a>
+            </div>
+            <!-- end top -->
+            <!-- top -->
+            <div class="relative">
+              <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+                <div>
+                  <!-- blog card -->
+                  <div
+                    class="overflow-hidden w-full border border-border rounded-[20px] text-black"
+                  >
+                    <div
+                      class="overflow-hidden w-full h-80 rounded-[20px] sm:h-100 md:h-180 lg:h-125 group/card"
+                    >
+                      <img
+                        class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                        src="/src/assets/img/glass-heart.png"
+                        width="2000"
+                        height="1500"
+                        loading="lazy"
+                        decoding="async"
+                        alt="plus icon"
+                      />
+                    </div>
+                    <div class="flex flex-col px-4 py-5 gap-y-2">
+                      <p class="text-p-mono">April, 7, 2026</p>
+                      <div class="max-w-87.5">
+                        <h6 class="font-medium">
+                          Inside the Studio: Our Process for Crafting a Standout
+                          Identity
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end blog card -->
+                </div>
+                <div>
+                  <!-- blog card -->
+                  <div
+                    class="overflow-hidden w-full border border-border rounded-[20px] text-black"
+                  >
+                    <div
+                      class="overflow-hidden w-full h-80 rounded-[20px] sm:h-100 md:h-180 lg:h-125 group/card"
+                    >
+                      <img
+                        class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                        src="/src/assets/img/african-man.png"
+                        width="2000"
+                        height="1501"
+                        loading="lazy"
+                        decoding="async"
+                        alt="plus icon"
+                      />
+                    </div>
+                    <div class="flex flex-col px-4 py-5 gap-y-2">
+                      <p class="text-p-mono">April, 7, 2026</p>
+                      <div class="max-w-87.5">
+                        <h6 class="font-medium">
+                          From Sketch to Screen: How Ideas Evolve Into Impactful
+                          Designs
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end blog card -->
+                </div>
+                <div>
+                  <!-- blog card -->
+                  <div
+                    class="overflow-hidden w-full border border-border rounded-[20px] text-black"
+                  >
+                    <div
+                      class="overflow-hidden w-full h-80 rounded-[20px] sm:h-100 md:h-180 lg:h-125 group/card"
+                    >
+                      <img
+                        class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                        src="/src/assets/img/desert-surfing.png"
+                        width="2000"
+                        height="1500"
+                        loading="lazy"
+                        decoding="async"
+                        alt="plus icon"
+                      />
+                    </div>
+                    <div class="flex flex-col px-4 py-5 gap-y-2">
+                      <p class="text-p-mono">April, 7, 2026</p>
+                      <div class="max-w-87.5">
+                        <h6 class="font-medium">
+                          Why Every Brand Needs a Signature Visual Language
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end blog card -->
+                </div>
+              </div>
+            </div>
+            <!-- end top -->
+          </div>
+        </div>
+      </section>
+      <!-- End Blog -->
+    </main>
+
+    <footer class="px-4 py-6 md:p-6 lg:p-8 bg-light-gray">
+      <div
+        class="flex flex-col justify-start items-stretch gap-y-33.5 md:gap-y-62.5"
+      >
+        <div class="flex flex-col justify-start items-stretch gap-y-24">
+          <!-- top -->
+          <div class="flex justify-between items-center">
+            <div data-animate-down class="nav-brand z-3 w-15">
+              <img
+                src="/src/assets/img/icons/about-logo.svg"
+                width="32"
+                height="100"
+                alt="brand logo"
+              />
+            </div>
+            <div class="flex justify-center items-center gap-x-3">
+              <a href="#">BE</a>
+              <span>/</span>
+              <a href="#">DR</a>
+              <span>/</span>
+              <a href="#">X</a>
+            </div>
+          </div>
+          <!-- end top -->
+          <!-- content -->
+          <div
+            class="flex flex-col gap-y-18 md:flex-row md:justify-between md:items-start md:gap-x-10"
+          >
+            <!-- text -->
+            <div
+              class="flex flex-col justify-start items-start w-full max-w-112.5 gap-y-7.5"
+            >
+              <div class="heading-h4">
+                We’d love to hear from you
+                <span class="text-text">
+                  whether you have a project in mind, or just want to say hi.
+                </span>
+              </div>
+              <a href="mailto:hi@bunhee.io" class="group/link">
+                <div class="pt-2 pb-4">
+                  <div class="heading-h4">hi@bungee.io</div>
+                </div>
+                <div
+                  class="w-[15%] h-0.5 group-hover/link:w-full overflow-hidden bg-black transition-all duration-350 ease-in-out-quad"
+                ></div>
+              </a>
+            </div>
+            <!-- end text -->
+            <!-- newsletter -->
+            <div
+              class="flex flex-col justify-start items-stretch gap-y-5.75 w-full max-w-full md:max-w-112.5"
+            >
+              <div
+                class="w-full max-w-87.5 flex flex-col justify-start items-stretch gap-y-2.5"
+              >
+                <h3>Join our newsletter</h3>
+                <div class="text-text tracking-2">
+                  Daily dose of design trends by the team.
+                </div>
+              </div>
+
+              <div
+                class="mb-0 flex flex-col justify-start items-stretch gap-y-5.75"
+              >
+                <form
+                  aria-label="Newsletter Form"
+                  class="flex flex-col justify-start items-stretch gap-y-5.75"
+                >
+                  <div>
+                    <label for="news-name"></label>
+                    <input
+                      class="h-12 w-full border-b border-gray block mb-0 p-0 focus-visible:outline-none focus:border-blue-500"
+                      maxlength="256"
+                      name="name"
+                      placeholder="Name"
+                      type="text"
+                      id="news-name"
+                    />
+                  </div>
+                  <div>
+                    <label for="news-email"></label>
+                    <input
+                      class="h-12 w-full border-b border-gray block mb-0 p-0 focus-visible:outline-none focus:border-blue-500"
+                      maxlength="256"
+                      name="email"
+                      placeholder="Email"
+                      type="email"
+                      id="news-email"
+                      required=""
+                    />
+                  </div>
+                  <input
+                    type="submit"
+                    data-wait="Please wait..."
+                    class="h-13 px-3.75 rounded-xl font-medium bg-black text-white hover:bg-[#1e1e1ed9] uppercase transition-colors duration-350 ease-in-out"
+                    value="SEND"
+                  />
+                </form>
+                <div
+                  class="hidden font-medium leading-[1.5em] text-p-l"
+                  tabindex="-1"
+                  role="region"
+                  aria-label="Newsletter Form success"
+                >
+                  <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div
+                  class="hidden"
+                  tabindex="-1"
+                  role="region"
+                  aria-label="Newsletter Form failure"
+                >
+                  <div>
+                    Oops! Something went wrong while submitting the form.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end newsletter -->
+          </div>
+          <!-- end content -->
+        </div>
+        <div
+          class="flex flex-col items-start gap-4 lg:flex-row lg:justify-between lg:items-center"
+        >
+          <div
+            class="flex flex-wrap justify-start items-center gap-y-6 md:flex-nowrap md:gap-y-0 gap-x-8"
+          >
+            <a href="projects" class="footer-link">Projects</a>
+            <a href="about" class="footer-link">About</a>
+            <a href="blog" class="footer-link">Blog</a>
+            <a href="contact" class="footer-link">Contact</a>
+            <a href="templates/style-guide" class="footer-link">Style Guide</a>
+            <a href="templates/licenes" class="footer-link">Licenses</a>
+            <a href="templates/changelog" class="footer-link">Changelog</a>
+          </div>
+          <p class="text-p-mono font-medium">Powered by AngleSoft</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script type="module" src="/src/main.js" defer></script>
+  </body>
+</html>
