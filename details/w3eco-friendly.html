@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ogbrukomo Godwin</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+<header class="fixed inset-x-0 top-0 h-20 py-4 bg-white/70 backdrop-blur-[10px] z-5">
+    <div class="z-5 flex overflow-hidden w-full h-full px-4 justify-between items-center md:px-8">
+        <div class="nav-brand pl-0">
+            <a href="../">
+                <img
+                        src="/src/assets/img/icons/logo.svg"
+                        width="24"
+                        height="100"
+                        alt="brand logo"
+                />
+            </a>
+        </div>
+        <nav id="main-nav"
+             class="main-nav absolute top-0 inset-x-0 overflow-hidden w-full h-160 sm:h-202.5 bg-transparent-white -translate-y-full pointer-events-none transition-transform duration-500 ease-in-out-quad">
+            <div class="relative flex flex-col w-full h-full pt-28 px-4 md:pt-40 md:px-8 md:pb-12 pb-8 gap-y-30 backdrop-blur-sm">
+                <div class="flex flex-col justify-start gap-y-1 md:gap-y-2.5">
+                    <div class="relative pb-2.5 group/item">
+                        <a href="../" class="nav-link">
+                            <span class="text-p-mono">( _01 )</span>
+                            Home
+                        </a>
+                        <div
+                                class="h-0.5 w-0 group-hover/item:w-full absolute top-auto bg-black transition-all duration-300 ease-in-out-quad"
+                        ></div>
+                    </div>
+                    <div class="relative pb-2.5 group/item">
+                        <a href="../projects" class="nav-link">
+                            <span class="text-p-mono">( _02 )</span>
+                            Projects
+                        </a>
+                        <div class="h-0.5 w-0 group-hover/item:w-full absolute top-auto bg-black transition-all duration-300 ease-in-out-quad"></div>
+                    </div>
+                    <div class="relative pb-2.5 group/item">
+                        <a href="../about" class="nav-link">
+                            <span class="text-p-mono">( _03 )</span>
+                            About
+                        </a>
+                        <div
+                                class="h-0.5 w-0 group-hover/item:w-full absolute top-auto bg-black transition-all duration-300 ease-in-out-quad"
+                        ></div>
+                    </div>
+                    <div class="relative pb-2.5 group/item">
+                        <a href="../contact" class="nav-link">
+                            <span class="text-p-mono">( _04 )</span>
+                            Contact
+                        </a>
+                        <div class="h-0.5 w-0 group-hover/item:w-full absolute top-auto bg-black transition-all duration-300 ease-in-out-quad"></div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <a href="mailto:ogbrukomogodwin@gmail.com" class="text-xl relative group inline-block">
+                        <div class="pt-2 pb-4">ogbrukomogodwin@gmail.com</div>
+                        <div
+                                class="absolute w-[15%] bottom-0 left-0 h-0.5 bg-black group-hover:w-full duration-350 transition-all ease-in"
+                        ></div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div id="hamburger-menu"
+             class="z-5 size-8 flex p-0 justify-center group items-center bg-transparent relative cursor-pointer">
+            <div
+                    class="w-0.5 h-8 rounded-2xl bg-black group-hover:-translate-y-1 group-hover:rotate-90 duration-350 ease-in-out"
+            ></div>
+            <div
+                    class="w-0.5 h-8 rounded-2xl bg-black absolute rotate-90 group-hover:translate-y-1 duration-350 ease-in-out"
+            ></div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Projects -->
+    <section class="pt-32 pb-8 md:pb-20 lg:pt-32 max-w-200 mx-auto">
+        <div class="px-4 md:px-6 mx-auto w-full max-w-380">
+            <div class="flex flex-col w-full justify-start items-stretch gap-y-4 md:gap-y-6 lg:gap-y-14">
+                <div data-animate-down
+                     class="flex flex-col gap-y-5 justify-center items-center md:flex-row md:justify-between md:items-end text-center md:text-start">
+                    <div class="w-full max-w-87.5 space-y-5">
+                        <h1 class="font-medium">W3eco friendly</h1>
+                        <div class="block text-text">
+                            <div class="text-p-xl">
+                                Corporate web presence for W3 Eco-Friendly Ltd the organization behind TraceWaste.
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://w3eco-friendly.com"
+                       target="_blank"
+                       class="relative w-27 hover:w-35 flex justify-between group/link items-center gap-x-4 pb-1 font-medium text-p-l leading-p-sm tracking-[-0.02em] transition-all duration-300 ease-in-out-quad">
+                        Live
+                        <img
+                                class="size-4 object-cover max-w-full"
+                                src="/src/assets/img/icons/plus.svg" width="16" height="16"
+                                loading="lazy"
+                                decoding="async"
+                                alt="plus icon"
+                        >
+                        <div class="absolute bottom-0 w-[15%] group-hover/link:w-full h-px bg-black transition-all duration-300 ease-in-out-quad"></div>
+                    </a>
+                </div>
+                <!-- project collections -->
+                <div class="bg-transparent" data-animate-down>
+                    <div class="grid grid-cols-1 gap-x-6 gap-y-6">
+                        <div class="inline-block w-full relative group/card">
+                            <div class="w-full h-50 rounded-4xl overflow-clip">
+                                <img
+                                        class="w-full h-full object-cover max-w-full group-hover/card:scale-110 transition-all duration-800 ease-in-out transform-gpu"
+                                        src="/src/assets/img/w3eco-friendly.avif"
+                                        width="762"
+                                        height="896"
+                                        alt="project"
+                                        loading="lazy"
+                                        decoding="async"
+                                />
+                                <div
+                                        class="flex justify-center items-center absolute inset-0"
+                                ></div>
+                            </div>
+                        </div>
+                        <div class="inline-block space-y-4">
+                            <h5>Problem</h5>
+                            <p>
+                                W3 Eco-Friendly Ltd was operating with real industry partnerships and a live compliance
+                                product (TraceWaste), but had no corporate web presence to match. Potential partners,
+                                regulators, and investors had no single destination to understand who the organization
+                                is, what it stands for, and what it has built.
+                            </p>
+                            <h5>Solution</h5>
+                            <p>A corporate anchor site for the W3 brand</p>
+                            <p>
+                                Built the corporate website for W3 Eco-Friendly Ltd to establish digital credibility for
+                                the parent organization. The site serves as the brand anchor connecting to TraceWaste
+                                and communicating the company's environmental mission, partnerships, and services to
+                                regulators, enterprises, and institutional stakeholders.
+                            </p>
+                            <h5>Stack</h5>
+                            <div class="flex flex-wrap gap-4">
+                                <div class="bg-black text-white px-4 py-2 inline-block">
+                                    React
+                                </div>
+                                <div class="bg-black text-white px-4 py-2 inline-block">
+                                    Typescript
+                                </div>
+                                <div class="bg-black text-white px-4 py-2 inline-block">
+                                    Tailwind CSS
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Projects -->
+</main>
+
+<footer class="px-4 py-6 md:p-6 lg:p-8 bg-light-gray">
+    <div class="flex flex-col justify-start items-stretch gap-y-33.5 md:gap-y-62.5">
+        <div class="flex flex-col justify-start items-stretch gap-y-24">
+            <!-- top -->
+            <div class="flex justify-between items-center">
+                <div data-animate-down class="nav-brand z-3 w-15">
+                    <img
+                            src="/src/assets/img/icons/logo.svg"
+                            width="32"
+                            height="100"
+                            alt="brand logo"
+                    />
+                </div>
+                <div class="flex justify-center items-center gap-x-3">
+                    <a href="https://www.linkedin.com/in/godwin-ogbrukomo/" target="_blank" class="uppercase">Li</a>
+                    <span>/</span>
+                    <a href="https://wa.me/2347014806219" target="_blank" class="uppercase">Wa</a>
+                    <span>/</span>
+                    <a href="https://github.com/macqueen006" target="_blank" class="uppercase">GH</a>
+                </div>
+            </div>
+            <!-- end top -->
+            <!-- content -->
+            <div class="flex flex-col gap-y-18 md:flex-row md:justify-between md:items-start md:gap-x-10">
+                <!-- text -->
+                <div class="flex flex-col justify-start items-start w-full max-w-112.5 gap-y-7.5">
+                    <div class="heading-h4">
+                        I’d love to hear from you
+                        <span class="text-text">
+                  whether you have a project in mind, or just want to say hi.
+                </span>
+                    </div>
+                    <a href="mailto:ogbrukomogodwin@gmail.com" class="group/link">
+                        <div class="pt-2 pb-4">
+                            <div class="text-xl">ogbrukomogodwin@gmail.com</div>
+                        </div>
+                        <div class="w-[15%] h-0.5 group-hover/link:w-full overflow-hidden bg-black transition-all duration-350 ease-in-out-quad"></div>
+                    </a>
+                </div>
+                <!-- end text -->
+            </div>
+            <!-- end content -->
+        </div>
+        <div class="flex flex-col items-start gap-4 lg:flex-row lg:justify-between lg:items-center">
+            <div class="flex flex-wrap justify-start items-center gap-y-6 md:flex-nowrap md:gap-y-0 gap-x-8">
+                <a href="../projects" class="footer-link">Projects</a>
+                <a href="../about" class="footer-link">About</a>
+                <a href="../contact" class="footer-link">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="module" src="/src/main.js" defer></script>
+</body>
+</html>
