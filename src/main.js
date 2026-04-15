@@ -1,57 +1,62 @@
 import gsap from "gsap";
-import {ScrollTrigger} from "gsap/ScrollTrigger";
-import {SplitText} from "gsap/SplitText";
-import {Draggable} from "gsap/dist/Draggable";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
+import { Draggable } from "gsap/dist/Draggable";
+import '@splidejs/splide/dist/css/splide.min.css';
+import Splide from "@splidejs/splide";
 
 gsap.registerPlugin(ScrollTrigger, SplitText, Draggable);
 
+// Nav
 const hamburger = document.getElementById("hamburger-menu");
-const [line1, line2] = hamburger.children;
-const mainNav = document.getElementById("main-nav");
+if (hamburger) {
+    const [line1, line2] = hamburger.children;
+    const mainNav = document.getElementById("main-nav");
 
-function handleHamburgerClick(event) {
-    event.stopPropagation();
-    const isOpen = hamburger.classList.toggle("is-open");
+    hamburger.addEventListener("click", (event) => {
+        event.stopPropagation();
+        const isOpen = hamburger.classList.toggle("is-open");
 
-    if (isOpen) {
-        hamburger.classList.remove('group');
-        line1.classList.remove('-translate-y-1', 'rotate-90');
-        line1.classList.add('rotate-45');
-        line2.classList.remove('translate-y-1', 'rotate-90');
-        line2.classList.add('-rotate-45');
-        mainNav.classList.remove('-translate-y-full', 'pointer-events-none');
-    } else {
-        hamburger.classList.add('group');
-        line1.classList.remove('rotate-45');
-        line2.classList.remove('-rotate-45');
-        line2.classList.add('rotate-90');
-        mainNav.classList.add('-translate-y-full', 'pointer-events-none');
-    }
+        if (isOpen) {
+            hamburger.classList.remove("group");
+            line1.classList.remove("-translate-y-1", "rotate-90");
+            line1.classList.add("rotate-45");
+            line2.classList.remove("translate-y-1", "rotate-90");
+            line2.classList.add("-rotate-45");
+            mainNav.classList.remove("-translate-y-full", "pointer-events-none");
+        } else {
+            hamburger.classList.add("group");
+            line1.classList.remove("rotate-45");
+            line2.classList.remove("-rotate-45");
+            line2.classList.add("rotate-90");
+            mainNav.classList.add("-translate-y-full", "pointer-events-none");
+        }
+    });
 }
 
-hamburger.addEventListener("click", handleHamburgerClick);
+// Hero animation
+if (document.querySelector("[data-animate-hero]")) {
+    gsap.from("[data-animate-hero]", {
+        y: -100,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.out",
+    });
 
-// 1. Page load animation
-gsap.from("[data-animate-hero]", {
-    y: -100,
-    opacity: 0,
-    duration: 0.8,
-    ease: "power2.out"
-});
+    ScrollTrigger.create({
+        trigger: "[data-animate-hero]",
+        start: "top 90%",
+        onEnterBack: () => {
+            gsap.fromTo(
+                "[data-animate-hero]",
+                { y: -100, opacity: 0 },
+                { y: 0, opacity: 1, duration: 0.8, ease: "power2.out" }
+            );
+        },
+    });
+}
 
-// 2. When scrolled back into hero — plays once each time you enter
-ScrollTrigger.create({
-    trigger: "[data-animate-hero]",
-    start: "top 90%",
-    onEnterBack: () => {
-        gsap.fromTo("[data-animate-hero]",
-            {y: -100, opacity: 0},
-            {y: 0, opacity: 1, duration: 0.8, ease: "power2.out"}
-        );
-    }
-});
-
-// Grab all elements with the attribute
+// Scroll animations
 function animateElements(selector, yValue) {
     document.querySelectorAll(selector).forEach((element) => {
         gsap.from(element, {
@@ -63,8 +68,8 @@ function animateElements(selector, yValue) {
             scrollTrigger: {
                 trigger: element,
                 start: "top 90%",
-                toggleActions: "play none none none"
-            }
+                toggleActions: "play none none none",
+            },
         });
     });
 }
@@ -72,201 +77,270 @@ function animateElements(selector, yValue) {
 animateElements("[data-animate-up]", 100);
 animateElements("[data-animate-down]", -100);
 
-const split = new SplitText(".gsap_split_line", {
-    type: "lines"
-});
+// Split text
+if (document.querySelector(".gsap_split_line")) {
+    const split = new SplitText(".gsap_split_line", { type: "lines" });
 
-gsap.from(split.lines, {
-    y: 100,
-    opacity: 0,
-    duration: 0.8,
-    ease: "power2.out",
-    stagger: 0.15,
-    scrollTrigger: {
-        trigger: ".gsap_split_line",
-        start: "top 85%",
-        toggleActions: "play none none none"
-    }
-});
+    gsap.from(split.lines, {
+        y: 100,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        stagger: 0.15,
+        scrollTrigger: {
+            trigger: ".gsap_split_line",
+            start: "top 85%",
+            toggleActions: "play none none none",
+        },
+    });
+}
 
+// Marquee
 const marquee = document.querySelector(".marquee-track");
-
-gsap.to(marquee, {
-    xPercent: -50,
-    ease: "linear",
-    duration: 50, // speed (lower = faster)
-    repeat: -1
-});
-
-const logos = document.querySelector(".logos-marquee-track");
-
-gsap.fromTo(".logos-marquee-track",
-    {xPercent: -50},
-    {
-        xPercent: 0,
+if (marquee) {
+    gsap.to(marquee, {
+        xPercent: -50,
         ease: "linear",
         duration: 50,
-        repeat: -1
-    }
-);
-
-// Faqs
-gsap.set(".answer-body", {height: 0, overflow: "hidden"});
-document.querySelectorAll(".faq-trigger").forEach((trigger) => {
-    const answer = trigger.nextElementSibling;
-    const arrow = trigger.querySelector(".faq-arrow");
-    let isOpen = false;
-
-    trigger.addEventListener("click", () => {
-        if (isOpen) {
-            // Close
-            gsap.to(answer, {
-                height: 0,
-                duration: 0.4,
-                ease: "power2.inOut"
-            });
-            gsap.to(arrow, {
-                rotation: 0,
-                duration: 0.4,
-                ease: "power2.inOut"
-            });
-        } else {
-            // Open
-            gsap.to(answer, {
-                height: "auto",
-                duration: 0.4,
-                ease: "power2.inOut"
-            });
-            gsap.to(arrow, {
-                rotation: 180,
-                duration: 0.4,
-                ease: "power2.inOut"
-            });
-        }
-        isOpen = !isOpen;
+        repeat: -1,
     });
-});
+}
 
-// Slider
-(function () {
-    // ─── Init ────────────────────────────────────────────────────────────────
-    const splide = new Splide('#service-slider', {
-        type        : 'loop',
-        // 450px matches tab:max-w-112.5 (112.5 × 4 = 450)
-        fixedWidth  : 450,
-        fixedHeight : '100%',
-        gap         : '0.75rem',   // mr-3
-        arrows      : false,       // we drive our own
-        pagination  : false,       // we drive our own dots
-        drag        : true,
-        snap        : true,
-        breakpoints : {
-            // below your "tab" breakpoint — show one full-width slide
-            768: {
-                fixedWidth : '100%',
-            },
+const logos = document.querySelector(".logos-marquee-track");
+if (logos) {
+    gsap.fromTo(
+        logos,
+        { xPercent: -50 },
+        { xPercent: 0, ease: "linear", duration: 50, repeat: -1 }
+    );
+}
+
+// FAQs
+const faqTriggers = document.querySelectorAll(".faq-trigger");
+if (faqTriggers.length) {
+    gsap.set(".answer-body", { height: 0, overflow: "hidden" });
+
+    faqTriggers.forEach((trigger) => {
+        const answer = trigger.nextElementSibling;
+        const arrow = trigger.querySelector(".faq-arrow");
+        let isOpen = false;
+
+        trigger.addEventListener("click", () => {
+            gsap.to(answer, {
+                height: isOpen ? 0 : "auto",
+                duration: 0.4,
+                ease: "power2.inOut",
+            });
+            gsap.to(arrow, {
+                rotation: isOpen ? 0 : 180,
+                duration: 0.4,
+                ease: "power2.inOut",
+            });
+            isOpen = !isOpen;
+        });
+    });
+}
+
+//  Slider
+const sliderEl = document.getElementById("service-slider");
+if (sliderEl) {
+    const splide = new Splide("#service-slider", {
+        type: "loop",
+        fixedWidth: 450,
+        gap: "0.75rem",
+        arrows: false,
+        pagination: false,
+        drag: true,
+        snap: true,
+        breakpoints: {
+            768: { fixedWidth: "100%" },
         },
     });
 
-    // ─── Custom arrows ───────────────────────────────────────────────────────
-    document.querySelector('.arrow-prev')
-        .addEventListener('click', () => splide.go('<'));
-    document.querySelector('.arrow-next')
-        .addEventListener('click', () => splide.go('>'));
+    document.querySelector(".arrow-prev")?.addEventListener("click", () => splide.go("<"));
+    document.querySelector(".arrow-next")?.addEventListener("click", () => splide.go(">"));
 
-    // ─── Custom dots ─────────────────────────────────────────────────────────
-    const dots = document.querySelectorAll('.slider-dots .dot');
+    const dots = document.querySelectorAll(".slider-dots .dot");
 
-    function syncDots(index) {
-        // Splide reports real index; with loop, clamp to slide count
+    dots.forEach((dot, i) => {
+        dot.addEventListener("click", () => splide.go(i));
+    });
+
+    splide.on("moved", () => {
         const realIndex = splide.index % dots.length;
         dots.forEach((dot, i) => {
-            dot.style.backgroundColor = i === realIndex ? '#fff' : 'rgba(255,255,255,0.4)';
+            dot.style.backgroundColor = i === realIndex ? "#fff" : "rgba(255,255,255,0.4)";
         });
-    }
-
-    // Click a dot → go to that slide
-    dots.forEach((dot, i) => {
-        dot.addEventListener('click', () => splide.go(i));
     });
 
-    // Keep dots in sync on every move
-    splide.on('moved', syncDots);
-
-    // ─── Mount ───────────────────────────────────────────────────────────────
     splide.mount();
-})();
+}
 
-//Modal
-(function () {
-    const VIDEO_SRC = 'https://www.youtube.com/embed/qR6Z_nC_upA?start=34&autoplay=1&rel=0';
+// Contact form
+const form = document.querySelector('form[action*="web3forms"]');
+if (form) {
+    const btn = document.getElementById("submit-btn");
+    const successMsg = document.querySelector('[aria-label="Contact Form success"]');
+    const errorMsg   = document.querySelector('[aria-label="Contact Form failure"]');
 
-    const trigger   = document.getElementById('videoTrigger');
-    const overlay   = document.getElementById('videoModal');
-    const backdrop  = document.getElementById('modalBackdrop');
-    const box       = document.getElementById('modalBox');
-    const closeBtn  = document.getElementById('modalClose');
+    // ── [NEW] Honeypot: bots fill hidden fields, humans don't
+    const honeypot = document.createElement('input');
+    honeypot.type  = 'text';
+    honeypot.name  = 'website';        // convincing field name for bots
+    honeypot.autocomplete = 'off';
+    honeypot.tabIndex = -1;
+    honeypot.setAttribute('aria-hidden', 'true');
+    honeypot.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;opacity:0;';
+    form.appendChild(honeypot);
 
-    let isAnimating = false;
+    // Track when the form first became visible
+    const formOpenedAt = Date.now();
+    const MIN_FILL_MS  = 3000;         // must take ≥ 3 s to fill (bots are instant)
 
-    function openModal() {
-        if (isAnimating) return;
+    // Session-scoped submission counter
+    let sessionCount = 0;
+    const SESSION_MAX = 3;
 
-        // Inject iframe with autoplay
-        const iframe = document.createElement('iframe');
-        iframe.src              = VIDEO_SRC;
-        iframe.title            = 'omrr - This City Lies (eilean rec. 06)';
-        iframe.allow            = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-        iframe.referrerPolicy   = 'strict-origin-when-cross-origin';
-        iframe.allowFullscreen  = true;
-        iframe.loading          = 'lazy';
-        box.appendChild(iframe);
+    // Rate limiting: max 3 per 10 min
+    function isRateLimited() {
+        const key    = 'cf_submissions';
+        const now    = Date.now();
+        const window = 10 * 60 * 1000;
+        const max    = 3;
 
-        // Lock scroll
-        document.body.style.overflow = 'hidden';
+        let history;
+        try {
+            history = JSON.parse(localStorage.getItem(key) || '[]');
+        } catch {
+            history = [];
+        }
 
-        // Trigger animation
-        overlay.style.opacity = '1';
-        requestAnimationFrame(() => {
-            overlay.classList.add('is-open');
-        });
+        const recent = history.filter(t => now - t < window);
+        if (recent.length >= max) return true;
+
+        recent.push(now);
+        try { localStorage.setItem(key, JSON.stringify(recent)); } catch { /* quota exceeded — non-fatal */ }
+        return false;
     }
 
-    function closeModal() {
-        if (isAnimating) return;
-        isAnimating = true;
-
-        overlay.classList.remove('is-open');
-        overlay.classList.add('is-closing');
-
-        // Wait for closing animation to finish
-        setTimeout(() => {
-            overlay.classList.remove('is-closing');
-            overlay.style.opacity = '0';
-
-            // Remove iframe — stops audio/video immediately
-            const iframe = box.querySelector('iframe');
-            if (iframe) iframe.remove();
-
-            document.body.style.overflow = '';
-            isAnimating = false;
-        }, 320);
+    // Sanitize: strip tags, trim, enforce length
+    function sanitize(value = '', maxLength = 500) {
+        return String(value)
+            .trim()
+            .replace(/[<>'"]/g, c => ({'<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]))
+            .replace(/[\u0000-\u001F\u007F]/g, '')   // strip control characters
+            .slice(0, maxLength);
     }
 
-    // Open
-    trigger.addEventListener('click', openModal);
-    trigger.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(); }
+    // ── [NEW] Stricter email validator (no consecutive dots, valid TLD length) ─
+    function isValidEmail(email) {
+        return /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*\.[a-zA-Z]{2,}$/.test(email)
+            && !email.includes('..')
+            && email.length <= 254;
+    }
+
+    // [NEW] Repeated-character check (aaaaaaaaaa, 1111111111)
+    function hasExcessiveRepetition(str) {
+        return /(.)\1{9,}/.test(str);
+    }
+
+    function validateForm(data) {
+        const name    = data.get('name')    || '';
+        const email   = data.get('email')   || '';
+        const message = data.get('message') || '';
+
+        if (name.length < 2  || name.length > 100)       return 'Name must be 2–100 characters.';
+        if (!isValidEmail(email))                         return 'Invalid email address.';
+        if (message.length < 10 || message.length > 2000) return 'Message must be 10–2000 characters.';
+
+        if (hasExcessiveRepetition(name) || hasExcessiveRepetition(message))
+            return 'Message rejected.';
+
+        // [NEW] Reject URLs and common injection patterns in name/message
+        const spamPatterns = /\b(viagra|casino|crypto|click here|free money|winner|SEO|backlink)\b|https?:\/\/|<script|javascript:|data:/i;
+        if (spamPatterns.test(message) || spamPatterns.test(name)) return 'Message rejected.';
+
+        return null;
+    }
+
+    // Single-flight guard — prevents double-submits
+    let submitting = false;
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        if (submitting) return;
+
+        // Bot signal 1: honeypot filled
+        if (honeypot.value.trim() !== '') return;
+
+        // Bot signal 2: submitted too fast
+        if (Date.now() - formOpenedAt < MIN_FILL_MS) {
+            errorMsg.textContent = 'Please take a moment to fill in the form.';
+            errorMsg?.classList.remove("hidden");
+            return;
+        }
+
+        // Session cap
+        if (sessionCount >= SESSION_MAX) {
+            errorMsg.textContent = 'Too many submissions this session.';
+            errorMsg?.classList.remove("hidden");
+            return;
+        }
+
+        // localStorage rate limit
+        if (isRateLimited()) {
+            errorMsg.textContent = 'Too many submissions. Try again in 10 minutes.';
+            errorMsg?.classList.remove("hidden");
+            return;
+        }
+
+        const rawData = new FormData(form);
+
+        const validationError = validateForm(rawData);
+        if (validationError) {
+            errorMsg.textContent = validationError;
+            errorMsg?.classList.remove("hidden");
+            return;
+        }
+
+        // Sanitize before sending
+        const cleanData = new FormData();
+        cleanData.append('access_key', rawData.get('access_key'));
+        cleanData.append('name',       sanitize(rawData.get('name'),    100));
+        cleanData.append('email',      sanitize(rawData.get('email'),   254));
+        cleanData.append('message',    sanitize(rawData.get('message'), 2000));
+
+        submitting = true;
+        sessionCount++;
+        btn.textContent = "SENDING...";
+        btn.disabled    = true;
+        errorMsg?.classList.add("hidden");
+
+        try {
+            const response = await fetch(form.action, {
+                method:  "POST",
+                body:    cleanData,
+                headers: { Accept: "application/json" },
+            });
+
+            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+            const result = await response.json();
+
+            if (result.success) {
+                form.reset();
+                successMsg?.classList.remove("hidden");
+                btn.textContent = "SENT ✓";
+            } else {
+                throw new Error("Submission failed");
+            }
+        } catch {
+            errorMsg.textContent = 'Something went wrong. Please try again.';
+            errorMsg?.classList.remove("hidden");
+            btn.textContent = "SEND";
+            btn.disabled    = false;
+            submitting      = false;
+        }
     });
-
-    // Close via button
-    closeBtn.addEventListener('click', closeModal);
-
-    // Close via backdrop click
-    backdrop.addEventListener('click', closeModal);
-
-    // Close via ESC
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeModal();
-    });
-})();
+}
